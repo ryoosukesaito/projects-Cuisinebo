@@ -1,0 +1,209 @@
+.logo, .logo img, .card-overlay, .card-img {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262626;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80) no-repeat center/cover;
+  position: relative;
+}
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  flex-direction: column;
+}
+
+div {
+  display: block;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.footer .social-media {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.social-media-item {
+  list-style: none;
+}
+
+.social-media-link {
+  color: #bbb;
+  font-size: 50px;
+  transition: color 0.7s;
+}
+.social-media-link:hover {
+  color: #d3ab55;
+}
+
+.footer-copyright-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #bbb;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d3ab55;
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+}
+
+.logo img {
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+}
+
+.main-name {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  color: #bbb;
+}
+
+.sub-name {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: #bbb;
+}
+
+.header-banner {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-heading {
+  font-family: "Dancing Script", cursive;
+  color: #d3ab55;
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  color: #bbb;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.card-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 10;
+  background-color: rgba(211, 171, 85, 0.6);
+  color: #fff;
+  transition: left 0.7s;
+  flex-direction: column;
+}
+
+.card:hover .card-overlay {
+  left: 0;
+}
+
+.card-overlay-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+.card-overlay-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card {
+  width: 33.333%;
+  height: 33vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=main.css.map */
